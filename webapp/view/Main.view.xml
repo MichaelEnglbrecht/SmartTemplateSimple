@@ -1,0 +1,18 @@
+<mvc:View controllerName="sap.training.smart.controller.Main" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m" xmlns:form="sap.ui.layout.form" xmlns:smartField="sap.ui.comp.smartfield">
+	<App>
+		<pages>
+			<Page title="{i18n>title}">
+				<content>
+					<form:SimpleForm minWidth="1024" maxContainerCols="2" editable="true" layout="ResponsiveGridLayout" labelSpanL="3" labelSpanM="3"
+						emptySpanL="4" emptySpanM="4" columnsL="1" columnsM="1" class="editableForm">
+						<form:content>
+							<smartField:SmartLabel labelFor="idPrice"/>
+							<smartField:SmartField value="{Price}" id="idPrice"/>
+						</form:content>
+					</form:SimpleForm>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>
